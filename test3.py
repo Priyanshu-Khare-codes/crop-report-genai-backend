@@ -1,6 +1,6 @@
 from google import genai
 from PIL import Image
-from models import Report
+from models1 import Report
 from dotenv import load_dotenv
 import os
 import json

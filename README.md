@@ -22,3 +22,16 @@ Agro Pro is an intelligent crop disease detection system that helps farmers and 
    ```bash
    git clone https://github.com/your-username/agro-pro.git
    cd agro-pro
+   
+2. Install dependencies:
+   pip install -r requirements.txt
+
+3. Run the server:
+   uvicorn main:app --reload
+
+📷 Usage
+Upload an image of the affected crop.
+
+The app analyzes the image using a trained model.
+
+Gemini generates a detailed cure and advice based on the detected of the disease of the crop and the plants.

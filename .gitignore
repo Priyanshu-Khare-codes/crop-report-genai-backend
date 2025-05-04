@@ -12,5 +12,4 @@ wheels/
 # Environment variables
 .env
 
-# Lock files
-uv.lock
+

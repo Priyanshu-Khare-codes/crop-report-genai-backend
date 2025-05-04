@@ -1,7 +1,7 @@
 from fastapi import FastAPI, UploadFile, File
 from fastapi.middleware.cors import CORSMiddleware
-from aiservice1 import generate_report
-from models1 import Report
+from aiservice import generate_report
+from models import Report
 import tempfile
 import os
 

@@ -1,6 +1,6 @@
 from google import genai
 from PIL import Image
-from models1 import Report
+from models import Report
 from dotenv import load_dotenv
 import os
 import json
@@ -25,7 +25,7 @@ def generate_report(image_path: str):
 
     # Make the API call to generate the report
     response = client.models.generate_content(
-        model="gemini-1.5-pro",
+        model="gemini-2.0-flash",
         contents=contents,
         config={
             'response_mime_type': 'application/json',
@@ -36,4 +36,17 @@ def generate_report(image_path: str):
     # Parse the response
     result = json.loads(response.text)
     return result
+
+#Crop Name: Unknown
+
+# Disease: Unknown
+
+# Symptoms:
+# Unknown
+# Cause:
+# Unknown
+# Management:
+# Unknown
+# Prevention:
+# Unknown
     

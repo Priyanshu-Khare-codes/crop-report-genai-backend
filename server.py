@@ -10,7 +10,7 @@ app = FastAPI()
 # Allow CORS for all origins
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["agrotovision.vercel.app"],
+    allow_origins=["https://agrotovision.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
